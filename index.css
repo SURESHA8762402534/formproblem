@@ -9,6 +9,8 @@ body{
 #header {
     background-color: rgb(194, 78, 188);
     height: 70px;
+    position: sticky;
+    top: 0;
 }
 #brand {
     width: 40%;
@@ -35,6 +37,53 @@ body{
     color: white;
     cursor:pointer;
 }
+
+.dropbtn {
+    background-color: rgb(182, 48, 43);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    margin-left: 20px;
+    bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d4b8b8;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(43, 23, 228);
+    font-weight: 500;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+  .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+      border-radius: 20px;
+    }
+
 #main{
     padding: 20px;
 }
@@ -89,19 +138,12 @@ a{
     margin-left: 30px;
     text-decoration: none;
 }
-#cd{
-    background: linear-gradient(45deg, );
-    color: rgb(37, 57, 240);
-    width: 500px;
-    padding: 15px;
-    border-radius: 50%;
-    margin: 20px; 
-}
 #th{
     width: 600px;
     background: linear-gradient(45deg, rgb(0, 110, 255),rgb(65, 182, 65),rgb(255, 123, 0)); 
     padding-left: 80px;
-    margin-left: 450px;
+    margin-top: 30px;
+    margin-left: 400px;
     text-align: center;
     border-radius: 50%;
     box-shadow: 0 10px 10px 0 black;
@@ -110,7 +152,7 @@ a{
     font-size: 50px;
     width: 500px;
     color: rgb(189, 34, 42);
-    background: linear-gradient(45deg, rgb(0, 110, 255),rgb(65, 182, 65),rgb(255, 123, 0)); 
+    background: radial-gradient( rgb(0, 110, 255),rgb(65, 182, 65),rgb(255, 123, 0)); 
     text-align: center;
     border-radius: 50%;
     box-shadow: 0 10px 10px 0 black;
